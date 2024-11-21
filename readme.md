@@ -14,6 +14,21 @@ This project focuses on optimizing the assignment of Straddle Carriers (SCs) to 
    Optimizes SC assignments to minimize the total combined distance traveled while ensuring all tasks are completed in parallel to reduce the overall makespan.
 
 ---
+## Log File Analysis
+
+The log file contains critical information about the operations of the Straddle Carriers (SCs), including task schedules, travel details, and location usage.
+
+### Key Insights from the Logs:
+1. **Travel Details**  
+   The logs provide detailed information about the travel distance and duration for each SC while performing tasks.  
+2. **Location Usage**  
+   The usage of different locations (e.g., QC001, QC003) by SCs is recorded, indicating how resources are allocated during task execution.
+
+### Location Usage Analysis
+The bar chart below shows the usage frequency of different locations based on the log file.
+
+**Graph: Location Usage Count**  
+![Location Usage Count](output/plots_logs/location_usage.png)
 
 ## Key Findings
 
@@ -29,10 +44,10 @@ This project focuses on optimizing the assignment of Straddle Carriers (SCs) to 
 
 **Graphs: Random vs Proximity-Based Assignment**  
 1. **Total SC Distance Traveled (Per SC):**  
-   ![Random vs Proximity Distance Per SC](output/plots_step1/total_distance_per_sc_updated.png)  
+   ![Random vs Proximity Distance Per SC](output/plots_Random_vs_Proximity/total_distance_per_sc_updated.png)  
 
 2. **Start and Finish Times (10 Random Containers):**  
-   ![Random vs Proximity Container Start/Finish Times](output/plots_step1/sample_containers_start_finish_comparison_updated.png)
+   ![Random vs Proximity Container Start/Finish Times](output/plots_Random_vs_Proximity/sample_containers_start_finish_comparison_updated.png)
 
 ---
 
@@ -47,13 +62,13 @@ This project focuses on optimizing the assignment of Straddle Carriers (SCs) to 
 
 **Graphs: Proximity vs MIP Assignment**  
 1. **Total SC Distance Traveled (Per SC):**  
-   ![Proximity vs MIP Distance Per SC](output/plots_step2/total_distance_per_sc_updated.png)  
+   ![Proximity vs MIP Distance Per SC](output/plots_Proximity_vs_MIP/total_distance_per_sc_updated.png)  
 
 2. **Total SC Distance Traveled (Combined Sum):**  
-   ![Proximity vs MIP Combined Distance](output/plots_step2/total_distance_combined_updated.png)  
+   ![Proximity vs MIP Combined Distance](output/plots_Proximity_vs_MIP/total_distance_combined_updated.png)  
 
 3. **Start and Finish Times (10 Random Containers):**  
-   ![Proximity vs MIP Container Start/Finish Times](output/plots_step2/sample_containers_start_finish_comparison_updated.png)
+   ![Proximity vs MIP Container Start/Finish Times](output/plots_Proximity_vs_MIP/sample_containers_start_finish_comparison_updated.png)
 
 ---
 
